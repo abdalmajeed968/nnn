@@ -1,0 +1,345 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+scroll-behavior: smooth;
+}
+header{
+    background-color: rgb(19, 18, 15);
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 200px;
+}
+.logo{
+   text-decoration: none;
+   color: aqua;
+   font-weight: 600;
+   font-size: 1.5em;
+}
+.navigation a{
+   color: aqua;
+   text-decoration: none;
+   font-size: 1.1em;
+   font-weight: 500;
+   padding-left: 30px;
+}
+.navigation a:hover{
+  color: aquamarine;
+
+}
+section{
+    padding: 100px 200px;
+}
+.main{
+   width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background: #d8d0d0;
+ background-size: contain;
+  text-align: center;
+}
+.main h2{
+    color: black;
+    font-size: 1.3em;
+    font-weight: 500;
+
+}
+.main h2 span{
+    display: inline-block;
+    margin-top: 10px;
+  color: rgb(30, 80, 196);
+  font-size: 3em;
+  font-weight: 600;
+
+}
+.main h3 {
+color:black;
+font-size: 1.1em;
+font-weight: 700;
+letter-spacing: 1px;
+margin-top: 10px;
+margin-bottom: 30px;
+text-transform: capitalize;
+}
+.main-btn{
+   color: rgb(182, 204, 220);
+  background-color: black;
+  text-decoration: none;
+  font-size: 1.1em;
+  font-weight: 600;
+  display: inline-block;
+  padding: 0.9375em 2.1875em;
+  letter-spacing: 1px;
+  border-radius: 15px;
+  margin-bottom: 40px;
+  transition: 0.7s ease;
+}
+.main-btn:hover{
+    background-color: rgb(49, 36, 36);
+    transform: scale(1.1);
+}
+
+.social-icons a {
+    color: black;
+    font-size: 1.7em;
+    padding-right: 30px;
+    margin-bottom: 100%;
+}
+.title{
+    display: flex;
+    justify-content: center;
+    color:rgb(28, 59, 150);
+    font-size: 2.2em;
+    font-weight: 800;
+    margin-bottom: 30px;
+}
+.content{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.card{ 
+     background-color: rgb(254, 252, 252);
+    width: 21.25em;
+    box-shadow: 0 5px 25px rgba(1 1 1 /15%);
+    border-radius: 10px;
+    padding: 25px;
+   margin: 15px;
+   transition: 0.7s ease;
+}
+.card:hover{
+    transform: scale(1.11);
+ 
+}
+.icon{
+    color: rgb(18, 63, 153);
+    font-size: 8em;
+    text-align:center;
+}
+.info{
+    text-align: center;
+}
+.info h3{
+   color: rgb(18, 63, 153);
+   font-size: 1.2em;
+   font-weight: 700;
+   margin: 10px;
+}
+.footer{
+   background-color:rgb(9, 2, 2) ;
+   color:aliceblue;
+   padding: 2em;
+   display: flex;
+   justify-content:space-between;
+}
+.social-iconsx{
+    color: rgb(245, 244, 244);
+    font-size: 1.7em;
+    padding-right: 10px;
+    transform: scale(1.11);
+
+}
+.footer-title{
+    font: 1.3em;
+    font-weight: 600;
+}
+.footer-title span{
+    color:aqua;
+}
+ @media(max-width:1023px){
+
+    header{
+        padding: 12px 20px  ;
+    }
+    .navigation{
+        padding: 10px;
+    }
+    .title{
+        font-size:1.8em ;
+    }
+    section{
+        padding: 80px 20px;
+    }
+    .main-cotent h2{
+        font-size: 1em;
+    }
+
+    .main-cotent h3{
+        font-style: 1.6em;
+    }
+      .content{
+        flex-direction: column;
+        align-self: center;
+
+      }
+}
+
+@media(max-width:900px){
+
+    header{
+        padding: 20px 20px  ;
+    }
+    .navigation{
+        padding: 10px;
+    }
+    .title{
+        font-size:1.8em ;
+        position: relative;
+        left: -50px;
+
+    }
+    section{
+        padding: 80px 20px;
+        width: 75%;
+    }
+    .cards {
+        position: relative;
+        left: 25%;
+    }
+    .main-cotent h2{
+        font-size: 1em;
+    }
+
+    .main-cotent h3{
+        font-style: 1.6em;
+    }
+      .content{
+        flex-direction: column;
+        align-self: center;
+
+      }
+}
+@media (max-width:540px) {
+
+    header{
+        padding: 20px 10px  ;
+    }
+    .navigation{
+        padding: 15px;
+    }
+    .title{
+        font-size:1.8em ;
+        position: relative;
+        left: -50px;
+    }
+    section{
+        padding: 30px 10px;
+    }
+    .cards {
+        position: relative;
+        left: 60px;
+
+    }
+    .main-cotent h2{
+        font-size: 0.6em;
+    }
+
+    .main-cotent h3{
+        font-style: 0.6em;
+    }
+      .content{
+        flex-direction: column;
+        align-self: center;
+
+      }
+}
+
+@media (max-width:500px) {
+
+    header{
+        padding: 20px 10px  ;
+    }
+    .navigation{
+        padding: 15px;
+    }
+    .title{
+        font-size:1.8em ;
+        position: relative;
+        left: -50px;
+    }
+    section{
+        padding: 30px 10px;
+    }
+    .cards {
+        position: relative;
+        left: 15px;
+
+    }
+    .main-cotent h2{
+        font-size: 0.6em;
+    }
+
+    .main-cotent h3{
+        font-style: 0.6em;
+    }
+      .content{
+        flex-direction: column;
+        align-self: center;
+
+      }
+}
+@media(max-width:390px){
+
+    header{
+        padding: 20px 5px  ;
+    }
+    .navigation{
+        padding: 15px;
+    }
+    .cards {
+        position: relative;
+        left: -10px;
+    }
+    .title{
+        font-size:1.3em ;
+    }
+    section{
+        padding: 15px 5px;
+    }
+    .main-cotent h2{
+        font-size: 0.6em;
+    }
+
+    .main-cotent h3{
+        font-style: 0.3em;
+    }
+      .content{
+        flex-direction: column;
+        align-self: center;
+
+      }
+}
+
+@media(max-width:300px){
+
+    header{
+        padding: 20px 5px  ;
+    }
+    .navigation{
+        padding: 30px;
+    }
+    .title{
+        font-size:1em ;
+    }
+    section{
+        padding: 15px 5px;
+    }
+    .main-cotent h2{
+        font-size: 0.6em;
+    }
+
+    .main-cotent h3{
+        font-style: 0.3em;
+    }
+      .content{
+        flex-direction: column;
+        align-self: center;
+
+      }
+}
